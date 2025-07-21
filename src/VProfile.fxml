@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CMain">
+   <center>
+      <TabPane fx:id="mainTabPane" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Profil Pengguna">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #EAF9FF;">
+                   <children>
+                      <GridPane layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="300.0">
+                         <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                         </columnConstraints>
+                         <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         </rowConstraints>
+                         <children>
+                            <Label text="Nama:" />
+                            <TextField fx:id="namaField" GridPane.columnIndex="1" />
+                            <Label text="Tinggi (cm):" GridPane.rowIndex="1" />
+                            <Spinner fx:id="tinggiSpinner" amountToStepBy="0.5" editable="true" initialValue="170.0" max="250.0" min="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            <Label text="Berat (kg):" GridPane.rowIndex="2" />
+                            <Spinner fx:id="beratSpinner" amountToStepBy="0.5" editable="true" initialValue="60.0" max="200.0" min="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            <Label text="Umur:" GridPane.rowIndex="3" />
+                            <Spinner fx:id="umurSpinner" amountToStepBy="1" editable="true" initialValue="25" max="70" min="18" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                            <Label text="Jenis Kelamin:" GridPane.rowIndex="4" />
+                            <ComboBox fx:id="jenisKelaminComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                            <Label text="Alergi:" GridPane.rowIndex="5" />
+                            <TextField fx:id="alergiField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                         </children>
+                      </GridPane>
+                      <HBox layoutX="50.0" layoutY="280.0" spacing="10.0">
+                         <children>
+                            <Button fx:id="editProfileButton" onAction="#handleEditProfile" text="Edit" />
+                            <Button fx:id="simpanProfileButton" onAction="#handleSimpanProfile" style="-fx-background-color: #0DFA05;" text="Simpan" />
+                            <Button fx:id="batalProfileButton" onAction="#handleBatalProfile" style="-fx-background-color: #FF1414;" text="Batal">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Button>
+                         </children>
+                      </HBox>
+                   </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+
+          <Tab text="Penjadwalan">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #C4EEFF;">
+                   <children>
+                      <TableView fx:id="scheduleTable" layoutX="10.0" layoutY="10.0" prefHeight="300.0" prefWidth="780.0">
+                        <columns>
+                          <TableColumn fx:id="activityColumn" prefWidth="150.0" text="Aktivitas" />
+                          <TableColumn fx:id="dateColumn" prefWidth="120.0" text="Tanggal" />
+                          <TableColumn fx:id="timeColumn" prefWidth="100.0" text="Waktu" />
+                          <TableColumn fx:id="notesColumn" prefWidth="410.0" text="Catatan" />
+                        </columns>
+                      </TableView>
+                      <GridPane layoutX="10.0" layoutY="320.0" prefHeight="150.0" prefWidth="780.0" style="-fx-background-color: white;">
+                         <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                         </columnConstraints>
+                         <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         </rowConstraints>
+                         <children>
+                            <Label text="Aktivitas:" />
+                            <TextField fx:id="scheduleActivityField" GridPane.columnIndex="1" />
+                            <Label text="Tanggal:" GridPane.rowIndex="1" />
+                            <DatePicker fx:id="scheduleDateField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            <Label text="Waktu:" GridPane.rowIndex="2" />
+                            <HBox spacing="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                <Spinner fx:id="scheduleHourSpinner" amountToStepBy="1" editable="true" initialValue="7" max="23" min="0" prefWidth="70" />
+                                <Label text=":" />
+                                <Spinner fx:id="scheduleMinuteSpinner" amountToStepBy="1" editable="true" initialValue="0" max="59" min="0" prefWidth="70" />
+                            </HBox>
+                            <Label text="Catatan:" GridPane.columnIndex="2" />
+                            <TextField fx:id="scheduleNotesField" GridPane.columnIndex="3" />
+                         </children>
+                      </GridPane>
+                      <HBox layoutX="10.0" layoutY="480.0" spacing="10.0">
+                         <children>
+                            <Button fx:id="addScheduleButton" onAction="#handleAddSchedule" style="-fx-background-color: #0DFA05;" text="Tambah" />
+                            <Button fx:id="editScheduleButton" onAction="#handleEditSchedule" text="Edit" />
+                            <Button fx:id="deleteScheduleButton" onAction="#handleDeleteSchedule" style="-fx-background-color: #FF1414;" text="Hapus">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Button>
+                         </children>
+                      </HBox>
+                   </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+
+          <Tab text="Laporan">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #C4EEFF;">
+                   <children>
+                        <BarChart fx:id="reportBudgetChart" layoutX="10.0" layoutY="10.0" prefHeight="250.0" prefWidth="380.0" title="Anggaran Biaya">
+                          <xAxis>
+                            <CategoryAxis fx:id="budgetXAxis" label="Periode" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="budgetYAxis" label="Jumlah (Rp)" />
+                          </yAxis>
+                        </BarChart>
+                        <BarChart fx:id="reportNutritionChart" layoutX="410.0" layoutY="10.0" prefHeight="250.0" prefWidth="380.0" title="Total Kalori">
+                          <xAxis>
+                            <CategoryAxis fx:id="nutritionXAxis" label="Periode" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="nutritionYAxis" label="Kalori (kcal)" />
+                          </yAxis>
+                        </BarChart>
+                        <TableView fx:id="reportDataTable" layoutX="10.0" layoutY="280.0" prefHeight="250.0" prefWidth="780.0">
+                          <columns>
+                            <TableColumn fx:id="reportPeriodColumn" prefWidth="150.0" text="Periode" />
+                            <TableColumn fx:id="reportBudgetColumn" prefWidth="300.0" text="Total Anggaran Biaya" />
+                            <TableColumn fx:id="reportCalorieColumn" prefWidth="330.0" text="Total Kalori" />
+                          </columns>
+                        </TableView>
+                     </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+
+          <Tab text="Perencanaan Nutrisi">
+             <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #EAF9FF;">
+                   <children>
+                       <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                           <children>
+                               <VBox spacing="5.0">
+                                   <Label text="Tujuan Nutrisi:" />
+                                   <ComboBox fx:id="nutriGoalComboBox" prefWidth="150.0" promptText="Pilih Tujuan" />
+                               </VBox>
+                               <VBox spacing="5.0">
+                                   <Label text="Periode:" />
+                                   <HBox spacing="10.0">
+                                       <ComboBox fx:id="nutriPeriodComboBox" prefWidth="150.0" promptText="Pilih Periode" />
+                                       <Button onAction="#handlePlanNutrition" text="Rencanakan" />
+                                   </HBox>
+                               </VBox>
+                           </children>
+                       </HBox>
+                      <TableView fx:id="nutritionPlanTable" layoutX="10.0" layoutY="80.0" prefHeight="200.0" prefWidth="780.0">
+                        <columns>
+                          <TableColumn fx:id="nutriItemColumn" prefWidth="150.0" text="Item Makanan" />
+                          <TableColumn fx:id="nutriCaloriesColumn" prefWidth="100.0" text="Kalori" />
+                          <TableColumn fx:id="nutriProteinColumn" prefWidth="100.0" text="Protein (g)" />
+                          <TableColumn fx:id="nutriFatColumn" prefWidth="100.0" text="Lemak (g)" />
+                          <TableColumn fx:id="nutriCarbsColumn" prefWidth="100.0" text="Karbo (g)" />
+                          <TableColumn fx:id="nutriQuantityColumn" prefWidth="80.0" text="Jumlah" />
+                          <TableColumn fx:id="nutriNotesColumn" prefWidth="150.0" text="Catatan" />
+                        </columns>
+                      </TableView>
+                       <GridPane layoutX="10.0" layoutY="290.0" prefHeight="100.0" prefWidth="780.0" style="-fx-background-color: #B3D2FF;">
+                           <columnConstraints>
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                               <Label text="Makanan:" />
+                               <TextField fx:id="nutriItemField" GridPane.columnIndex="1" />
+                               <Label text="Kalori:" GridPane.rowIndex="1" />
+                               <Spinner fx:id="nutriCaloriesSpinner" amountToStepBy="10" editable="true" initialValue="100" max="5000" min="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                               <Label text="Jumlah:" GridPane.columnIndex="2" />
+                               <Spinner fx:id="nutriQuantitySpinner" amountToStepBy="1" editable="true" initialValue="1" max="100" min="1" GridPane.columnIndex="3" />
+                               <Label text="Catatan:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                               <TextField fx:id="nutriNotesField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                           </children>
+                       </GridPane>
+                       <HBox layoutX="10.0" layoutY="400.0" spacing="10.0">
+                           <children>
+                               <Button onAction="#handleAddNutritionItem" style="-fx-background-color: #0DFA05;" text="Tambah" />
+                               <Button onAction="#handleEditNutritionItem" text="Edit" />
+                               <Button onAction="#handleDeleteNutritionItem" style="-fx-background-color: #FF1414;" text="Hapus" />
+                           </children>
+                       </HBox>
+                       <Label layoutX="10.0" layoutY="440.0" styleClass="header-label-small" text="Laporan Konsumsi Nutrisi Harian:" />
+                      <TableView fx:id="nutritionReportTable" layoutX="10.0" layoutY="470.0" prefHeight="150.0" prefWidth="780.0">
+                        <columns>
+                          <TableColumn fx:id="reportNutriItemColumn" prefWidth="150.0" text="Item Makanan" />
+                          <TableColumn fx:id="reportNutriCaloriesColumn" prefWidth="100.0" text="Kalori" />
+                          <TableColumn fx:id="reportNutriProteinColumn" prefWidth="100.0" text="Protein (g)" />
+                          <TableColumn fx:id="reportNutriFatColumn" prefWidth="100.0" text="Lemak (g)" />
+                          <TableColumn fx:id="reportNutriCarbsColumn" prefWidth="100.0" text="Karbo (g)" />
+                          <TableColumn fx:id="reportNutriQuantityColumn" prefWidth="80.0" text="Jumlah" />
+                          <TableColumn fx:id="reportNutriNotesColumn" prefWidth="150.0" text="Catatan" />
+                        </columns>
+                      </TableView>
+                   </children>
+                </AnchorPane>
+             </content>
+          </Tab>
+
+          <Tab text="Perencanaan Anggaran">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #EAF9FF;">
+                      <children>
+                           <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="10.0">
+                               <Label text="Masukkan Anggaran Bulanan (Rp):" />
+                               <TextField fx:id="monthlyBudgetField" prefWidth="150.0" promptText="Contoh: 5000000" />
+                               <Button onAction="#handlePlanBudget" text="Rencanakan" />
+                           </HBox>
+                          <TableView fx:id="budgetPlanTable" layoutX="10.0" layoutY="80.0" prefHeight="150.0" prefWidth="780.0">
+                              <columns>
+                                  <TableColumn fx:id="budgetPlanItemColumn" prefWidth="200.0" text="Item Anggaran" />
+                                  <TableColumn fx:id="budgetPlanAmountColumn" prefWidth="150.0" text="Jumlah (Rp)" />
+                                  <TableColumn fx:id="budgetPlanCategoryColumn" prefWidth="150.0" text="Kategori" />
+                                  <TableColumn fx:id="budgetPlanNotesColumn" prefWidth="280.0" text="Catatan" />
+                              </columns>
+                          </TableView>
+                          <GridPane layoutX="10.0" layoutY="236.0" prefHeight="100.0" prefWidth="780.0" style="-fx-background-color: white;">
+                              <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                              <children>
+                                  <Label text="Item:" />
+                                  <TextField fx:id="budgetItemField" GridPane.columnIndex="1" />
+                                  <Label text="Jumlah (Rp):" GridPane.rowIndex="1" />
+                                  <Spinner fx:id="budgetAmountSpinner" amountToStepBy="1000" editable="true" initialValue="10000" max="10000000" min="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                  <Label text="Kategori:" GridPane.columnIndex="2" />
+                                  <ComboBox fx:id="budgetCategoryComboBox" prefWidth="150.0" GridPane.columnIndex="3" />
+                                  <Label text="Catatan:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                  <TextField fx:id="budgetNotesField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              </children>
+                          </GridPane>
+                          <HBox layoutX="10.0" layoutY="360.0" spacing="10.0">
+                              <children>
+                                  <Button onAction="#handleAddBudgetItem" style="-fx-background-color: #0DFA05;" text="Tambah" />
+                                  <Button onAction="#handleEditBudgetItem" text="Edit" />
+                                  <Button onAction="#handleDeleteBudgetItem" style="-fx-background-color: #FF1414;" text="Hapus" />
+                              </children>
+                          </HBox>
+                          <Label layoutX="10.0" layoutY="400.0" styleClass="header-label-small" text="Laporan Pengeluaran Harian:" />
+                          <TableView fx:id="budgetReportTable" layoutX="10.0" layoutY="430.0" prefHeight="150.0" prefWidth="780.0" style="-fx-background-color: white;">
+                              <columns>
+                                  <TableColumn fx:id="reportBudgetItemColumn" prefWidth="200.0" text="Item Pengeluaran" />
+                                  <TableColumn fx:id="reportBudgetAmountColumn" prefWidth="150.0" text="Jumlah (Rp)" />
+                                  <TableColumn fx:id="reportBudgetCategoryColumn" prefWidth="150.0" text="Kategori" />
+                                  <TableColumn fx:id="reportBudgetNotesColumn" prefWidth="280.0" text="Catatan" />
+                              </columns>
+                          </TableView>
+                      </children>
+                  </AnchorPane>
+              </content>
+          </Tab>
+
+          <Tab text="Rekomendasi Resep">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #EAF9FF;">
+                      <children>
+                           <HBox layoutX="10.0" layoutY="10.0" spacing="20.0">
+                               <children>
+                                   <VBox spacing="5.0">
+                                       <Label text="Bahan Makanan Tersedia:" />
+                                       <ComboBox fx:id="availableIngredientsComboBox" prefWidth="200.0" promptText="Pilih Bahan" />
+                                   </VBox>
+                                   <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleSearchRecipes" text="Cari Resep" />
+                               </children>
+                           </HBox>
+                          <TableView fx:id="recipeTable" layoutX="10.0" layoutY="80.0" prefHeight="250.0" prefWidth="780.0">
+                            <columns>
+                              <TableColumn fx:id="recipeNameColumn" prefWidth="200.0" text="Nama Resep" />
+                              <TableColumn fx:id="recipeIngredientsColumn" prefWidth="300.0" text="Bahan-bahan" />
+                              <TableColumn fx:id="recipeInstructionsColumn" prefWidth="280.0" text="Instruksi Singkat" />
+                            </columns>
+                          </TableView>
+                          <GridPane layoutX="10.0" layoutY="350.0" prefHeight="100.0" prefWidth="780.0" style="-fx-background-color: white;">
+                              <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                              <children>
+                                  <Label text="Nama Resep:" />
+                                  <TextField fx:id="recipeNameField" GridPane.columnIndex="1" />
+                                  <Label text="Bahan-bahan:" GridPane.rowIndex="1" />
+                                  <TextField fx:id="recipeIngredientsField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                  <Label text="Instruksi:" GridPane.columnIndex="2" />
+                                  <TextField fx:id="recipeInstructionsField" GridPane.columnIndex="3" />
+                              </children>
+                          </GridPane>
+                          <HBox layoutX="10.0" layoutY="480.0" spacing="10.0">
+                              <children>
+                                  <Button onAction="#handleAddRecipe" style="-fx-background-color: #0DFA05;" text="Tambah" />
+                                  <Button onAction="#handleEditRecipe" text="Edit" />
+                                  <Button onAction="#handleDeleteRecipe" style="-fx-background-color: #FF1414;" text="Hapus" />
+                              </children>
+                          </HBox>
+                      </children>
+                  </AnchorPane>
+              </content>
+          </Tab>
+
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
