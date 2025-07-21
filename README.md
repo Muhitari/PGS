@@ -52,8 +52,8 @@ src/
 
 ## 🚀 Cara Menjalankan
 
-1. Clone repositori ini:
-   git clone https://github.com/Muhitari/PGS.git
+1. Clone repositori ini :
+   - git clone https://github.com/Muhitari/PGS.git
 2. Buka project di VS Code atau IntelliJ IDEA.
 3. Pastikan sudah menginstal:
 - JDK 17 atau lebih baru 
