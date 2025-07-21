@@ -1,0 +1,713 @@
+{
+  "profile": {
+    "nama": {
+      "name": "",
+      "value": "Nama Pengguna",
+      "valid": true
+    },
+    "tinggi": {
+      "name": "",
+      "value": 170.0,
+      "valid": true
+    },
+    "berat": {
+      "name": "",
+      "value": 60.0,
+      "valid": true
+    },
+    "umur": {
+      "name": "",
+      "value": 25,
+      "valid": true
+    },
+    "jenisKelamin": {
+      "name": "",
+      "value": "Pria",
+      "valid": true
+    },
+    "alergi": {
+      "name": "",
+      "value": "Tidak Ada",
+      "valid": true
+    }
+  },
+  "scheduleData": [
+    {
+      "aktivitas": {
+        "name": "",
+        "value": "Makan Pagi",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "tanggal": {},
+      "waktu": {},
+      "catatan": {
+        "name": "",
+        "value": "Oatmeal",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    },
+    {
+      "aktivitas": {
+        "name": "",
+        "value": "Olahraga",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "tanggal": {},
+      "waktu": {},
+      "catatan": {
+        "name": "",
+        "value": "Lari 30 menit",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    }
+  ],
+  "reportData": [
+    {
+      "periode": {
+        "name": "",
+        "value": "Minggu 1",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "totalAnggaranBiaya": {
+        "name": "",
+        "value": 500000.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "totalKalori": {
+        "name": "",
+        "value": 14000.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    },
+    {
+      "periode": {
+        "name": "",
+        "value": "Minggu 2",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "totalAnggaranBiaya": {
+        "name": "",
+        "value": 450000.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "totalKalori": {
+        "name": "",
+        "value": 13500.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    }
+  ],
+  "nutritionPlanItems": [
+    {
+      "name": {
+        "name": "",
+        "value": "Nasi Goreng",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "calories": {
+        "name": "",
+        "value": 400.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "protein": {
+        "name": "",
+        "value": 15.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "fat": {
+        "name": "",
+        "value": 10.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "carbs": {
+        "name": "",
+        "value": 60.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "quantity": {
+        "name": "",
+        "value": 1,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "notes": {
+        "name": "",
+        "value": "Sarapan pagi",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Ayam Bakar",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "calories": {
+        "name": "",
+        "value": 300.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "protein": {
+        "name": "",
+        "value": 30.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "fat": {
+        "name": "",
+        "value": 15.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "carbs": {
+        "name": "",
+        "value": 5.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "quantity": {
+        "name": "",
+        "value": 1,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "notes": {
+        "name": "",
+        "value": "Makan siang",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    }
+  ],
+  "budgetItems": [
+    {
+      "item": {
+        "name": "",
+        "value": "Sayuran",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "amount": {
+        "name": "",
+        "value": 50000.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "category": {
+        "name": "",
+        "value": "Makanan",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "notes": {
+        "name": "",
+        "value": "Belanja mingguan",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    },
+    {
+      "item": {
+        "name": "",
+        "value": "Gym Member",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "amount": {
+        "name": "",
+        "value": 150000.0,
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "category": {
+        "name": "",
+        "value": "Olahraga",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "notes": {
+        "name": "",
+        "value": "Bulanan",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    }
+  ],
+  "recommendedRecipes": [
+    {
+      "name": {
+        "name": "",
+        "value": "Salad Buah",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Apel, Pisang, Anggur, Saus Yoghurt, Buah",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Campur semua buah dan tuangkan saus.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Smoothie Hijau",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Bayam, Pisang, Air Kelapa, Sayur",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "instructions": {
+        "name": "",
+        "value": "Blender semua bahan hingga halus.",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Oatmeal Pisang",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Oat, Pisang, Madu, Susu",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Masak oat dengan susu, tambahkan pisang dan madu.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Tumis Brokoli",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Brokoli, Bawang Putih, Minyak Zaitun, Sayur",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Tumis semua bahan hingga matang.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Telur Rebus",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Telur",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Rebus telur selama 8–10 menit.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Ikan Bakar",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Ikan, Jeruk Nipis, Garam, Bawang Putih",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Lumuri ikan dan panggang sampai matang.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Sup Ayam",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Dada Ayam, Wortel, Kentang, Seledri",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "instructions": {
+        "name": "",
+        "value": "Rebus semua bahan hingga empuk.",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Sarden Tomat",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Sarden, Tomat, Bawang Merah",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Masak semua bahan sampai matang.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Tempe Goreng",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Tempe, Bawang Putih, Ketumbar, Garam",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Iris tempe, bumbui, lalu goreng.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Tahu Kukus",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Tahu, Wortel, Telur",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "instructions": {
+        "name": "",
+        "value": "Campur bahan dan kukus selama 20 menit.",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Sop Sayur",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Wortel, Buncis, Kol, Jagung",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Rebus semua bahan dengan sedikit garam.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Smoothie Berry",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Strawberry, Blueberry, Yoghurt",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Blender hingga halus.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Kentang Rebus",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Kentang",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Rebus kentang hingga empuk.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Ayam Panggang Lemon",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Dada Ayam, Lemon, Lada, Garam",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      },
+      "instructions": {
+        "name": "",
+        "value": "Panggang ayam dengan bumbu selama 30 menit.",
+        "valid": true,
+        "helper": {
+          "observable": {}
+        }
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Roti Gandum Alpukat",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Roti Gandum, Alpukat, Telur",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Oleskan alpukat di roti, tambahkan telur.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Yoghurt Granola",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Yoghurt, Granola, Madu",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Campurkan semuanya dalam mangkuk.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Sayur Asem",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Melinjo, Labu, Kacang Panjang, Asam",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Rebus semua bahan sampai matang.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Pisang Bakar Coklat",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Pisang, Coklat, Keju",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Bakar pisang dan taburi coklat serta keju.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Jus Wortel Jeruk",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Wortel, Jeruk, Madu",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Blender bahan dan saring.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Edamame Rebus",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Edamame, Garam",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Rebus edamame dan taburi garam.",
+        "valid": true
+      }
+    },
+    {
+      "name": {
+        "name": "",
+        "value": "Rendang",
+        "valid": true
+      },
+      "ingredients": {
+        "name": "",
+        "value": "Daging Sapi, Santan, Cabai, Bawang Merah, Bawang Putih, Lengkuas, Serai, Daun Kunyit, Garam",
+        "valid": true
+      },
+      "instructions": {
+        "name": "",
+        "value": "Masak semua bahan dengan api kecil hingga bumbu meresap dan kuah mengering.",
+        "valid": true
+      }
+    }
+  ]
+}
