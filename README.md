@@ -61,3 +61,5 @@ src/
 - Gson library
 - FXML SDK library 
 4. Jalankan file MainApp.java.
+
+## Video : <https://youtu.be/pTbAR_beyNM>
